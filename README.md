@@ -6,7 +6,8 @@ How to use:
 Compile and upload sketch :ArduinoController.ino
 
 2.Hardware:
-PCB<---(wire)--->port2 (Arduino) Serial port <----->USB of PC
+PCB<---(wire)--->port2 (Arduino) USB port <---USB cable-->USB of PC
+GND port (Arduino) <---wire---> GND or Metal Cover of CNC
 
 3. Desktop app:
 Open Mach3 and connect to CNC
