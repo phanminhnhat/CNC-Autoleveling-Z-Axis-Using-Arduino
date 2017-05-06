@@ -205,21 +205,22 @@ Func autoZeroZAxis()
 	closeComPort($hFile)
 	checkCommError()
 	Sleep(500)
+;Remove in release 1.1. These steps are not really stable because of display size
 	;Set  Zero
-	Local $aClientSize = getAppSize()
-	Local Const $appWidth=1366
-	Local Const $appHeight=685
-	ConsoleWrite("Mouse Click" & @CRLF)
-	MouseClick ("",787*$aClientSize[0]/$appWidth, 195*$aClientSize[1]/$appHeight , 1, 10 )
-	Sleep(200)
-	Send("0");Input delta Z if need be
-	ConsoleWrite("ENTER" & @CRLF)
-	Send("{ENTER}")
-	;Page up
-	ConsoleWrite("MOVE UP" & @CRLF)
-	Send("{PGUP down}") ;Move the bit up 3s
-	Sleep(3000)
-	Send("{PGUP up}") ;Stop CNC
+;~ 	Local $aClientSize = getAppSize()
+;~ 	Local Const $appWidth=1366
+;~ 	Local Const $appHeight=685
+;~ 	ConsoleWrite("Mouse Click" & @CRLF)
+;~ 	MouseClick ("",787*$aClientSize[0]/$appWidth, 195*$aClientSize[1]/$appHeight , 1, 10 )
+;~ 	Sleep(200)
+;~ 	Send("0");Input delta Z if need be
+;~ 	ConsoleWrite("ENTER" & @CRLF)
+;~ 	Send("{ENTER}")
+;~ 	;Page up
+;~ 	ConsoleWrite("MOVE UP" & @CRLF)
+;~ 	Send("{PGUP down}") ;Move the bit up 3s
+;~ 	Sleep(3000)
+;~ 	Send("{PGUP up}") ;Stop CNC
 
 EndFunc   ;==>Main_Form
 
