@@ -17,8 +17,8 @@ Run mach3ControllerVx.x.exe
 This software will control MACH3 automatically
 
 
-Support Window 10 only.
-Not tested on Window 7 and Window XP
+Support Window 10 and 7 only.
+Not tested on Window XP
 
 Instruction Video
 https://www.youtube.com/watch?v=WwtvhkvFtqA
